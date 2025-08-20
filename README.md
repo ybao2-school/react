@@ -1661,6 +1661,21 @@ export const FancyButton = forwardRef(
 
 If you are grabbing the props of a component that forwards refs, use [`ComponentPropsWithRef`](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/a05cc538a42243c632f054e42eab483ebf1560ab/types/react/index.d.ts#L770).
 
+`ref` as a prop:
+
+React 19, you can access ref as prop for function components.
+
+```tsx
+function MyInput({ placeholder, ref }) {
+  return <input placeholder={placeholder} ref={ref} />;
+}
+
+// In parent
+<MyInput ref={ref} />;
+```
+
+Read more [`ref` as a prop](https://react.dev/blog/2024/12/05/react-19#ref-as-a-prop).
+
 #### Generic forwardRefs
 
 Read more context in https://fettblog.eu/typescript-react-generic-forward-refs/:
