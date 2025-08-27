@@ -1,4 +1,4 @@
-# React TypeScript Cheatsheet
+# React TypeScript Cheatsheet modify
 
 Cheatsheet for using React with TypeScript.
 
